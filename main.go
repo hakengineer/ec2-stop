@@ -20,7 +20,6 @@ func main() {
 
 	instanceid := flag.String("i", "", "description")
 	flag.Parse()
-	fmt.Println(*instanceid)
 
 	svc := ec2.New(Session())
 	input := &ec2.StopInstancesInput{
